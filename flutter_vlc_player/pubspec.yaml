@@ -10,9 +10,9 @@ environment:
 flutter:
   plugin:
     platforms:
-      android:
-        package: software.solid.fluttervlcplayer
-        pluginClass: FlutterVlcPlayerPlugin
+      #android:
+      #  package: software.solid.fluttervlcplayer
+      #  pluginClass: FlutterVlcPlayerPlugin
       ios:
         pluginClass: FlutterVlcPlayerPlugin
 
