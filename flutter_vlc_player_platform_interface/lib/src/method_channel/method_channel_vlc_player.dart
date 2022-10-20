@@ -155,7 +155,7 @@ class MethodChannelVlcPlayer extends VlcPlayerPlatform {
           case 'buffering':
           case 'timeChanged':
             return VlcMediaEvent(
-              mediaEventType: VlcMediaEventType.timeChanged,
+              mediaEventType: map['event'] == 'buffering' ? VlcMediaEventType.buffering : VlcMediaEventType.timeChanged,
               size: Size(
                 map['width']?.toDouble() ?? 0.0,
                 map['height']?.toDouble() ?? 0.0,

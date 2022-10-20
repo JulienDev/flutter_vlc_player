@@ -508,7 +508,7 @@ class VLCPlayerEventStreamHandler: NSObject, FlutterStreamHandler, VLCMediaPlaye
             
         case .buffering:
             mediaEventSink([
-                "event": "timeChanged",
+                "event": "buffering",
                 "height": height,
                 "width":  width,
                 "speed": speed,
